@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+    Author: Silvia Mariana Reyesvera Quijano - 000813686 
+    Date: November 23rd, 2020
+
+    This code displays a shopping list. It contains input fields to add
+    items to the list and different tabs under it for the different
+    categories under which the items fall into. 
+
+    IMAGE OBTAINED FROM:
+    https://thenounproject.com/term/trash-can/144274/
+-->
+
+<html>
+
+<head>
+    <title>Shopping List</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/shopliststyle.css">
+    <script src="js/shoppinglist.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Shopping List</h1>
+    </header>
+    <div id="addItem">
+        <div id="fields">
+            <div id="itemField">
+                <label for="itemInput">Item <span id="itemInputError"></span></label>
+                <input type="text" id="itemInput" name="itemInput" maxlength="40" required>
+            </div>
+            
+            <div id="quantityField">
+                <label for="quantityInput">Quantity <span id="quantityInputError"></span></label>
+                <input type="number" id="quantityInput" name="quantityInput" min="1" max="1000" value="1" required>   
+            </div>
+
+            <div id="categoryField">
+                <label for="categoryComboBox">List</label>
+                <select id="categoryComboBox" name="categoryInput" required>
+                    <option>example</option>
+                </select>
+            </div>
+
+            <div id="submitField">
+                <input id="submitButton" type="submit" value="Add Item">
+                <div id="submitError"></div>
+            </div>
+        </div>
+    </div>
+    <div id="listDisplay">
+        <div id="categories">
+            <div class="tab" id="addCategory">
+                <span>+</span>
+            </div>
+        </div>
+        <div id="categoryItems">
+            <h3 id="categoryTitle"></h3>
+            <table>
+                <tbody id="items">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

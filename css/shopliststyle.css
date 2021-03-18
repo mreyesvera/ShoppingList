@@ -1,0 +1,237 @@
+/*
+    Author: Silvia Mariana Reyesvera Quijano - 000813686 
+    Date: November 23rd, 2020
+
+    This code provides styling meant for index.html
+*/
+
+body {
+    background-color: #db5858;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    min-width: 300px;
+}
+
+tr {
+    margin: auto 0;
+    width: 200px;
+    list-style-type: none;
+}
+
+td img {
+    width: 20px;
+    height: 20px;
+    float: right;
+    padding-left: 8px;
+}
+
+td img:hover {
+    cursor: pointer;
+}
+
+header {
+    background-color: white;
+    color:#db5858;
+    padding: 5px;
+    border-radius: 40px;
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+#addItem {
+    background-color: white;
+    margin: 10px auto;
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+
+#fields {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    width: 300px;
+    margin: 0 auto;
+}
+
+#listDisplay {
+    width: 80%;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+#categoryItems {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+label{
+    display: block;
+    font-size: 0.75em;
+    width: 120px;
+}
+
+#itemField, #quantityField, #categoryField, #submitField {
+    padding: 5px;
+}
+
+#itemField {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#quantityField {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#categoryField {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#submitField {
+    grid-column: 2;
+    grid-row: 2;
+    margin: auto 0;
+}
+
+#quantityInput {
+    width: 80px;
+}
+
+/*CSS REFERENCE: https://www.w3schools.com/howto/howto_js_tabs.asp*/
+#categories {
+    overflow: hidden;
+    background-color: #db5858;
+    margin: 0 10px;
+    
+}
+
+.tab {
+    background-color:#d9d9d9;
+    display: inline;
+    padding: 0 5px;
+    height: 25px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.tab:hover {
+    cursor: pointer;
+}
+
+#addCategory {
+    padding: 0 10px;
+}
+
+#addCategory:hover {
+    background-color: black;
+    color: white;
+}
+
+#newCategoryInput {
+    height: 11px;
+    width: 100px;
+}
+
+
+.categoryDelete {
+    border: none;
+    padding: 0;
+    width:  16px;
+    height: 16px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.categoryDelete:hover {
+    background-color: #db5858;
+    color: white;
+}
+
+#submitButton {
+    border: none;
+    padding: 3px 5px;
+    border-radius: 3px;
+}
+
+.submitHoverEffect:hover {
+    background-color:  #db5858;
+    color: white;
+}
+
+.item {
+    padding-left: 10px;
+}
+
+#itemInputError, #quantityInputError, #submitError {
+    color: #db5858;
+    display: inline;
+}
+
+table {
+    padding-left: 40px;
+    padding-bottom: 30px;
+}
+
+.tabName {
+    padding-right: 5px;
+}
+
+@media all and (max-width: 600px){
+    table {
+        padding-left: 0;
+    }
+
+    .tab {
+        padding: 0 5px;
+        border-radius: 10px;
+        margin: 2px;
+    }
+
+    #categoryItems {
+        margin-top: 3px;
+    }
+
+    #categories {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    header {
+        width: 80%;
+    }
+
+    #fields {
+        grid-template-columns: 1fr;
+        width: 200px;
+    }
+
+    #itemField {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #quantityField {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    #categoryField {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    #submitField {
+        grid-column: 1;
+        grid-row: 4;
+        margin: 0 auto;
+    }
+}
